@@ -321,25 +321,12 @@ const AddUserDrawer = ({ open, onClose, onUserCreated }) => {
     });
   };
 
-  // Helper function to format the selected modules with sub-modules
+  // Helper function to format the selected modules as an array of strings
   const formatModules = () => {
     let formattedModules = [];
-
     for (const moduleKey in checkedModules) {
       if (checkedModules[moduleKey]) {
-        const [mainModule, subModule] = moduleKey.split('_');
-        if (subModule) {
-          const mainModuleIndex = formattedModules.findIndex(
-            (module) => module.main === mainModule
-          );
-          if (mainModuleIndex !== -1) {
-            formattedModules[mainModuleIndex].subModules.push(subModule);
-          } else {
-            formattedModules.push({ main: mainModule, subModules: [subModule] });
-          }
-        } else {
-          formattedModules.push({ main: mainModule, subModules: [] });
-        }
+        formattedModules.push(moduleKey);
       }
     }
     return formattedModules;
@@ -350,13 +337,11 @@ const AddUserDrawer = ({ open, onClose, onUserCreated }) => {
     const formattedModules = formatModules();
 
     return formattedModules.map((module) => (
-      <Box key={module.main} sx={{ mb: 2 }}>
-        <Typography sx={{ fontWeight: 'bold' }}>{module.main}</Typography>
-        {module.subModules.length > 0 && (
+      <Box key={module} sx={{ mb: 2 }}>
+        <Typography sx={{ fontWeight: 'bold' }}>{module.split('_')[0]}</Typography>
+        {module.split('_')[1] && (
           <ul>
-            {module.subModules.map((subModule) => (
-              <li key={subModule}>{subModule}</li>
-            ))}
+            <li>{module.split('_')[1]}</li>
           </ul>
         )}
       </Box>
@@ -515,7 +500,7 @@ const AddUserDrawer = ({ open, onClose, onUserCreated }) => {
         ...formValues,
         role: roleType === 'Custom Role' ? customRole : role,
         roleType,
-        modules: formatModules(),
+        registeredModules: formatModules(), // <-- Use the new format here
         zone: selectedZone,
         branch: selectedBranch,
         password: generatePassword ? generatedPassword : undefined

@@ -9,7 +9,7 @@ const XLSX = require('xlsx');
 // Create a new user
 const createUser = async (req, res) => {
   try {
-    const { firstName, lastName, displayName, username, password, role, zone, branch, modules } = req.body;
+    const { firstName, lastName, displayName, username, password, role, zone, branch, registeredModules } = req.body;
 
     if (!firstName || !lastName || !displayName || !username || !password || !role || !zone || !branch) {
       return res.status(400).json({ message: 'All fields are required' });
@@ -34,7 +34,7 @@ const createUser = async (req, res) => {
       role,
       zone,
       branch,
-      registeredModules: modules
+      registeredModules
     });
 
     await newUser.save();

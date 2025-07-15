@@ -37,7 +37,9 @@ import ErrorBoundary from '../../components/ErrorBoundary';
 import ErrorNotification from '../../components/ErrorNotification';
 import useErrorHandler from '../../hooks/useErrorHandler';
 
+
 const steps = ['Basics', 'Manage Roles', 'Manage Modules', 'Finish'];
+
 
 const headquarterRoles = [
   'IT', 'Admin', 'HR', 'Operations', 'Training and Development',
@@ -45,7 +47,7 @@ const headquarterRoles = [
   'Warehouse - Construction', 'Purchase', 'Surveillance', 'Finance'
 ];
 const branchRoles = ['Restaurant Manager'];
-
+//Modules List for Users
 const modules = [
   { main: 'Licenses', subModules: ['Trade Licenses', 'Staff Medicals', 'Tourism Licenses', 'Labour Licenses'] },
   { main: 'Approvals', subModules: ['Outer Spaces'] },

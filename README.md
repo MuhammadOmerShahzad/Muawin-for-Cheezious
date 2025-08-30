@@ -1,13 +1,13 @@
 # 🏢 Muawin - Enterprise Management System
 
-> **A comprehensive enterprise management platform built for Cheezious restaurant chain operations**
+> **A proprietary enterprise management platform built exclusively for Cheezious restaurant chain operations**
 
 [![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18.2.0-green.svg)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-6.12.0-green.svg)](https://mongodb.com/)
 [![Express](https://img.shields.io/badge/Express-4.18.2-gray.svg)](https://expressjs.com/)
 [![Material-UI](https://img.shields.io/badge/Material--UI-5.16.7-blue.svg)](https://mui.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Private](https://img.shields.io/badge/Status-Private-red.svg)](LICENSE)
 
 ## 📋 Table of Contents
 
@@ -26,7 +26,13 @@
 
 ## 🎯 Overview
 
-**Muawin** is a sophisticated enterprise management system specifically designed for **Cheezious**, a leading restaurant chain in Pakistan. The platform streamlines and centralizes all business operations across multiple zones and branches, providing a comprehensive solution for document management, compliance tracking, and operational oversight.
+**Muawin** is a proprietary enterprise management system exclusively developed for **Cheezious**, a leading restaurant chain in Pakistan. This private software solution streamlines and centralizes all business operations across multiple zones and branches, providing a comprehensive platform for document management, compliance tracking, and operational oversight.
+
+**👨‍💻 Lead Developer**: This system was designed, developed, and implemented as a solo project by the lead developer, demonstrating full-stack development capabilities across the entire technology stack.
+
+**⚠️ Important Notice**: This is proprietary software owned by Cheezious. Unauthorized use, distribution, or modification is strictly prohibited.
+
+**🔒 Protection Measures**: This repository includes comprehensive legal and technical protections against unauthorized copying, downloading, or use of the code.
 
 ### 🏢 About Cheezious
 
@@ -439,25 +445,24 @@ PUT    /api/notifications/:id  # Mark as read
 - **Secure File Storage**: GridFS with access control
 - **Token Expiration**: Automatic session timeout
 
-## 🤝 Contributing
+## 🤝 Development
 
-We welcome contributions to improve Muawin! Please follow these guidelines:
+This is a proprietary software system developed exclusively for Cheezious by the lead developer. The system was built as a comprehensive solo project, showcasing end-to-end development capabilities from concept to deployment.
 
-### Development Setup
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes
-4. Test thoroughly
-5. Commit your changes: `git commit -m 'Add amazing feature'`
-6. Push to the branch: `git push origin feature/amazing-feature`
-7. Open a Pull Request
+### Development Approach
+- **Solo Development**: Entire system designed and built by a single lead developer
+- **Full-Stack Expertise**: Complete frontend and backend development
+- **Architecture Design**: Custom system architecture and database design
+- **Performance Optimization**: Comprehensive performance improvements and optimizations
+- **Security Implementation**: Complete security framework and authentication system
 
-### Code Standards
-- Follow ESLint configuration
+### Internal Development Guidelines
+- Follow established coding standards and ESLint configuration
 - Use meaningful commit messages
-- Write comprehensive tests
-- Update documentation
-- Follow React best practices
+- Write comprehensive tests for all new features
+- Update documentation for any system changes
+- Follow React best practices and Material-UI guidelines
+- Ensure all changes maintain security and performance standards
 
 ### Testing
 ```bash
@@ -470,27 +475,55 @@ cd frontend
 npm test
 ```
 
-## 📄 License
+### Code Review Process
+- All changes require internal code review
+- Security review for authentication and authorization changes
+- Performance testing for database and file operations
+- User acceptance testing for new features
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 License & Proprietary Rights
+
+**PROPRIETARY SOFTWARE - ALL RIGHTS RESERVED**
+
+This software is the exclusive property of **Cheezious**. All rights, title, and interest in and to the software, including all intellectual property rights, are and will remain the exclusive property of Cheezious.
+
+**Unauthorized use, reproduction, distribution, or modification of this software is strictly prohibited.**
+
+- **Copyright**: © 2024 Cheezious. All rights reserved.
+- **Confidentiality**: This software contains confidential and proprietary information
+- **Restrictions**: No copying, distribution, or modification without written permission
+- **Enforcement**: Violations will be pursued to the fullest extent of the law
 
 ## 🙏 Acknowledgments
 
-- **Cheezious** for the opportunity to build this enterprise solution
+- **Cheezious** for the opportunity to build this enterprise solution and trust in the lead developer's capabilities
 - **Material-UI** for the excellent React component library
 - **MongoDB** for the robust database solution
 - **Express.js** community for the powerful web framework
 - **React** team for the amazing frontend library
 
-## 📞 Support
+### Developer Recognition
+This enterprise-level system was successfully delivered as a solo development project, demonstrating:
+- **Full-Stack Development**: Complete frontend and backend implementation
+- **System Architecture**: Custom database design and API development
+- **Performance Engineering**: Advanced optimizations and caching strategies
+- **Security Implementation**: Comprehensive authentication and authorization
+- **Project Management**: End-to-end development from requirements to deployment
 
-For support and questions:
-- **Email**: [your-email@domain.com]
-- **Issues**: [GitHub Issues](https://github.com/yourusername/muawin/issues)
-- **Documentation**: [Project Wiki](https://github.com/yourusername/muawin/wiki)
+## 📞 Internal Support
+
+For internal support and technical questions:
+- **IT Department**: Contact Cheezious IT team
+- **System Administrator**: Internal system administration
+- **Documentation**: Internal knowledge base and documentation
+- **Training**: Contact HR for user training and onboarding
+
+**Note**: This is an internal system. External support requests are not accepted.
 
 ---
 
-**Built with ❤️ for Cheezious**
+**Proprietary Software - Built Exclusively for Cheezious**
 
-*Last updated: December 2024*
+*Developed by: Lead Developer (Solo Project)*
+*Last updated: June 2025*
+*Confidential - Internal Use Only*
